@@ -376,6 +376,61 @@
   }
   
   /* About Me Section */
+  .about {
+    background-color: #141414;
+  }
+  
+  .about__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 70vh;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .about__content {
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    padding-right: 10px;
+  }
+
+  .about__content h1 {
+    font-size: 3.5rem;
+    color: #87ceeb;
+  }
+
+  .about__content p{
+    font-size: 1.5rem;
+  }
+  
+  .about__img--container {
+    text-align: center;
+  }
+
+  #about__img {
+    height: 50%;
+    width: 50%;
+    filter:grayscale(90%);
+  }
+
+  #about__img:hover {
+    height: 50%;
+    width: 50%;
+    filter:grayscale(0%);
+    transition: ease 0.5s;
+  }
+
+
+  /*SERVICES*/
   .services {
     background: #131313;
     display: flex;
