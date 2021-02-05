@@ -429,6 +429,27 @@
     transition: ease 0.5s;
   }
 
+  .grid__container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid__item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    filter:grayscale(75%);
+  }
+
+  .grid__item:hover {
+    filter:grayscale(0%);
+    transition: ease 0.5s;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
 
   /*SERVICES*/
   .services {
