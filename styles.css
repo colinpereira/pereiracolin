@@ -115,8 +115,8 @@
   }
   
   .navbar__links:hover {
-    color: #2042a8;
-    transition: all 0.3s ease;
+    color: #87ceeb;
+    transition: all 0.5s ease;
   }
   
   @media screen and (max-width: 960px) {
