@@ -23,9 +23,8 @@
   .container {
     flex: 0 1 700px;
     margin: auto;
-    margin-top: 80px;
-    padding: 10px;
-    height: 90vh;
+    margin-top: 150px;
+    margin-bottom: 0px;
   }
   
   .screen {
@@ -128,8 +127,8 @@
   
   .app-contact {
     margin-top: auto;
-    font-size: 8px;
-    color: #888;
+    font-size: 15px;
+    color:rgb(221, 221, 221);
   }
   
   .app-form-group {
