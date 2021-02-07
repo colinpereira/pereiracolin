@@ -338,6 +338,7 @@
     .main__content {
       text-align: center;
       margin-bottom: 4rem;
+      transition: all 1s ease-in-out;
     }
   
     .main__content h1 {
@@ -379,26 +380,28 @@
   /* About Me Section */
   .about {
     background-color: #141414;
+    align-items: center;
   }
   
   .about__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 50% 50%; */
     align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 0px;
   }
   
   .about__content {
     color: #fff;
+    flex: 50%;
     width: 100%;
     align-items: center;
     align-self: center;
@@ -431,12 +434,24 @@
     transition: ease 0.5s;
   }
 
+  .grid{
+    flex: 50%;
+    padding-left: 100px;
+  }
   .grid__container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
   }
   
+  .grid__title {
+    font-size: 1.8rem;
+    color: #87ceeb;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
   .grid__item {
     padding: 20px;
     font-size: 30px;
@@ -451,6 +466,20 @@
     font-size: 30px;
     text-align: center;
   }
+
+  @media screen and (max-width: 800px) {
+    .about__container{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .about__container{
+      flex-direction: row;
+    }
+  }
+
+
 
 
   /*SERVICES*/

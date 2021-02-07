@@ -6,6 +6,7 @@
     <title>Colin Pereira</title>
     <link rel="shortcut icon" type="image/png" href="images\cplogo.jpg">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact_form.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
@@ -42,7 +43,7 @@
           <h1>HELLO, WORLD!</h1>
           <h2>I'M COLIN</h2>
           <p>An electrical engineer sophomore at the University of British Columbia.</p>
-          <button class="main__btn"><a target="_blank" href="resources\RESUME_COLIN_PEREIRA.pdf">Contact Me </a></button>
+          <button class="main__btn"><a href="#contactme__form">Contact Me </a></button>
         </div>
         <!-- <div class="main__img--container">
           <img id="main__img" src="images/pic1.svg" />
@@ -51,17 +52,32 @@
     </div>
 
     <!-- About Me Section -->
-    <div class="about">
+    <div id="aboutme" class="about">
+      
       <div class="about__container" >
         <div class="about__content">
-          <h1 id="aboutme">About Me</h1>
+          <h1>About Me</h1>
           <p>Hello! I'm Colin, an electrical engineering student at the University of British Columbia currently living in Vancouver, Canada.
             I've been an aspiring software developer since taking a programming course at University. 
-            I enjoy travelling, hiking and meeting new people, so get in touch! Here are a few technologies I've been working on recently:</p>
+            I enjoy travelling, hiking and meeting new people, so get in touch! </p>
+          </div>
+        <div class="grid">
+          <div class="grid__title"><h1>Skills</h1></div>
+          <div class="grid__container">
+            <div class="grid__item"><img src="images\c_logo.png" width="90px"></div>
+            <div class="grid__item"><img src="images\python_logo.png" width="90px"></div>
+            <div class="grid__item"><img src="images\html_logo.png" width="90px"></div>
+            <div class="grid__item"><img src="images\css_logo.png" width="90px"></div>
+            <div class="grid__item"><img src="images\js_logo.png" width="90px"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+          </div>
         </div>
         <!-- <div class="about__img--container">
           <img id="about__img" src="images/colin.jpeg" width="20%"/> -->
-          <div class="grid">
+          <!-- <div class="grid">
             <div class="grid__container">
               <div class="grid__item"><img src="images\c_logo.png" width="50%"></div>
               <div class="grid__item"><img src="images\python_logo.png" width="50%"></div>
@@ -73,12 +89,68 @@
               <div class="grid__item"></div>
               <div class="grid__item"></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
+    <!-- Contact Form -->
+    <div class="background">
+      <div id="contactme__form" class="container">
+        <form  action = "https://formspree.io/f/mknpeknn" method="POST" id="my-form">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>GET IN</span>
+                <span>TOUCH</span>
+              </div>
+              <div class="app-contact">CONTACT INFO : +1 (236) 866 5799</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input class="app-form-control" type ="text" name="firstName" placeholder="NAME">
+                </div>
+                <div class="app-form-group">
+                  <input type ="email" class="app-form-control" name="lastName" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input type ="tel" class="app-form-control" name="number" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input type="text" class="app-form-control" name="message" placeholder="MESSAGE">
+                </div>
+                <div class="app-form-group buttons">
+                  <button type="submit" class="app-form-button">SEND</button>
+                </div>
 
-    <script src="app.js"></script>
+                <div id="status"></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="./app.js"></script>
   </body>
-</html>
+</html><br>
