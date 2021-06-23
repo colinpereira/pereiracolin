@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  font-weight: 400;
 }
 
 .navbar__container {
