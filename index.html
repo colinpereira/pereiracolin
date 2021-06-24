@@ -14,6 +14,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -31,10 +34,10 @@
             <a href="index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#aboutme" class="navbar__links">About</a>
+            <a href="#about" class="navbar__links">About</a>
           </li>
           <li class="navbar__item">
-            <a href="experience.html" class="navbar__links">Experience</a>
+            <a href="experience.html" class="navbar__links">Projects</a>
           </li>
           <li class="navbar__item">
             <a href="#contactme__form" class="navbar__links">Contact</a>
@@ -51,7 +54,7 @@
           <h1>HELLO, WORLD!</h1>
           <h2>I'M COLIN</h2>
           <p>An electrical engineer junior at the University of British Columbia.</p>
-          <button class="main__btn"><a href="#contactme__form">Contact Me </a></button>
+          <button id="about" class="main__btn"><a href="#contactme__form">Contact Me </a></button>
         </div>
         <!-- <div class="main__img--container">
           <img id="main__img" src="images/pic1.svg" />
@@ -61,32 +64,57 @@
 
     <!-- About Me Section -->
     <div id="aboutme">
-      
       <div class="left__container" >
-       <div>
-          <h1>ABOUT ME</h1>
-            <p>
-            Hello! I'm Colin, an electrical engineering student at the University of British Columbia currently living in Vancouver, Canada.
-            I've been an aspiring software developer since taking a programming course at University. 
-            I enjoy travelling, hiking and meeting new people, so get in touch!
-            </p>
-        </div>
+        <h1>ABOUT ME</h1>
+          <p>
+          Hello! I'm Colin, an electrical engineering student at the University of British Columbia currently living in Vancouver, Canada.
+          I've been an aspiring software developer since taking a programming course at University. 
+          I enjoy travelling, hiking and meeting new people, so get in touch!
+          </p>
+          <br/>
+          <h1>SKILLS</h1>
+          
+           <div class="cardTechStack">
+              <div class="techStack">
+                <h3>HTML</h3>
+              </div>
+              <div class="techStack">
+                <h3>CSS</h3>
+              </div>
+              <div class="techStack">
+                <h3>JavaScript</h3>
+              </div>
+              <div class="techStack">
+                <h3>ReactJS</h3>
+              </div>
+              <div class="techStack">
+                <h3>NodeJS</h3>
+              </div>
+              <div class="techStack">
+                <h3>ExpressJS</h3>
+              </div>
+              <div class="techStack">
+                <h3>MySQL</h3>
+              </div>
+              <div class="techStack">
+                <h3>MongoDB</h3>
+              </div>
+              <div class="techStack">
+                <h3>REST API </h3>
+              </div>
+          </div>
       </div>
 
       <div class="right__container">
-       <div>
-          <h1>SKILLS</h1>
-            <h2>Front-End</h2>
-              <ul>- ReactJS</ul>
-              <ul>- HTML / CSS</ul>
-              <ul>- JavaScript</ul>
-              <ul>- Bootstrap</ul>
-            </br>
-              <h2>Back-End</h2>
-              <ul>- ExpressJS / NodeJS</ul>
-              <ul>- REST</ul>
-              <ul>- MySQL</ul>
-              <ul>- GraphQL</ul>
+        <h1>EXPERIENCE</h1>
+        <div class="timelineContainer">
+          <div class="timelineInfo">
+            <h2>Front-End Software Developer</h2>
+            <h3>Building Blocks Peer Mentoring</h3>
+            <h4>Vancouver, BC</h4>
+            <h4>May 2021 - Present</h4>
+            <p><strong>Skills:</strong> ReactJS, MongoDB, NodeJS</p>
+          </div>
         </div>
 
       </div>
@@ -117,8 +145,8 @@
                 <span>TOUCH</span>
               </div>
               <div class="app-contact">
-                <a target="_blank" href="https://www.linkedin.com/in/colinpereira/" style="color:#87ceeb; text-decoration:none; ">LINKEDIN</a><br>
-                <a target="_blank" href="https://github.com/colinpereira" style="color:#87ceeb; text-decoration:none">GITHUB</a>
+                <a target="_blank" href="https://www.linkedin.com/in/colinpereira/">LINKEDIN</a><br>
+                <a target="_blank" href="https://github.com/colinpereira">GITHUB</a>
               </div>
             </div>
             <div class="screen-body-item">
@@ -156,24 +184,25 @@
 
 
 
-<!-- Footer Sections -->
-    <div class="footer__container">
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <!-- <div class="footer__logo">
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>LOGO_COME_HERE</a>
-          </div> -->
-          <p class="website__rights">COLIN PEREIRA | 2021</p>
-            </a>
-          </div>
+    <!-- Footer Sections -->
+    <div class="footerContainer">
+      <div class="footerLeft">
+        <h3>COLIN PEREIRA | 2021</h3>
+      </div>
+      <div class="footerRight">
+        <div class="footerIconContainer">
+          <a href="https://github.com/colinpereira" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/github.png"/>
+          </a>
+          <a href="mailto:colinpereira37@gmail.com" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/email.png"/>
+          </a>
+          <a href="https://www.linkedin.com/in/colinpereira/" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/linkedin.png"/>
+          </a>
         </div>
-      </section>
-    </div> 
-
-
-
-
-    
+      </div>
+    </div>    
 
     <script src="./app.js"></script>
   </body>

@@ -1,31 +1,118 @@
 #aboutme {
   background-color: #141414;
-  align-items: center;
-  justify-content: center;
   display: flex;
-  height: 90vh;
-  width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  flex-direction: row;
 }
 
 .left__container {
-  display: flex;
   flex: 50%;
-  flex-direction: row;
-  align-items: center;
-  justify-self: center;
-  margin: auto;
-  padding-right: 50px;
   background-color: #141414;
   color: #fff;
+  margin-left: 100px;
+  padding-left: 50px;
+  margin-right: 25px;
+  height: 100%;
 }
 
 .right__container {
   display: flex;
+  flex-direction: column;
   flex: 50%;
-  align-items: center;
-  justify-self: center;
+  background-color: #141414;
+  color: #fff;
+  margin-right: 100px;
+  margin-left: 25px;
+  padding-right: 50px;
+  height: 100%;
+}
+
+.timelineContainer {
+  border-left: 2px solid white;
+  padding: 0 20px 0 20px;
+}
+
+.timelineInfo {
+  background-color: #505050;
+  padding: 10px 25px;
+  border-radius: 5px;
+  line-height: 1.7;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timelineInfo:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 3px solid #ddd;
+  position: absolute;
+  top: 10px;
+  left: -28px;
+}
+
+.timelineInfo:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #505050 transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -16px;
+  top: 10px;
+}
+
+.timelineInfo h2 {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font: normal;
+  font-weight: 450;
+  color: #87ceeb;
+}
+
+.timelineInfo h3 {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  font: normal;
+  font-weight: 400;
+}
+
+.timelineInfo h4 {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font: normal;
+  font-weight: 300;
+}
+
+.timelineInfo p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font: normal;
+  font-weight: 300;
+}
+
+.left__container h1 {
+  font-size: 3rem;
+  color: #87ceeb;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.left__container p {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  font: normal;
+  font-weight: 300;
+}
+
+.right__container h1 {
+  font-size: 3rem;
+  color: #87ceeb;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -66,14 +153,44 @@ p {
   transition: ease 0.5s;
 }
 
-/* @media screen and (max-width: 800px) {
-  .about__container {
-    flex-direction: column;
-  }
+.cardTechStack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 800px) {
-  .about__container {
-    flex-direction: row;
+.techStack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #505050;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  color: #66c6db;
+}
+
+.techStack h3 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+}
+
+@media screen and (max-width: 768px) {
+  #aboutme {
+    flex-direction: column;
   }
-} */
+
+  .left__container {
+    margin: 0px auto 0px auto;
+  }
+
+  .right__container {
+    margin: 0px auto 0px 50px;
+  }
+
+  .cardTechStack {
+    justify-content: center;
+    align-items: center;
+  }
+}
