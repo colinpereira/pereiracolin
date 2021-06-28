@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colin Pereira</title>
     <link rel="shortcut icon" type="image/png" href="images\cplogo.png">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="contact_form.css" />
+
+    <link rel="stylesheet" href="styles\main.css" />
+    <link rel="stylesheet" href="styles\navbar.css" />
+    <link rel="stylesheet" href="styles\projects.css" />
+    <link rel="stylesheet" href="styles\about.css" />
+    <link rel="stylesheet" href="styles\footer.css" />
+    <link rel="stylesheet" href="styles\contact_form.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-
-
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -29,7 +33,7 @@
             <a href="index.html#aboutme" class="navbar__links">About</a>
           </li>
           <li class="navbar__item">
-            <a href="#experience" class="navbar__links">Experience</a>
+            <a href="#experience" class="navbar__links">Projects</a>
           </li>
           <li class="navbar__item">
             <a href="index.html#contactme__form" class="navbar__links">Contact</a>
@@ -39,35 +43,55 @@
       </div>
     </nav>
 
-    <!-- Intro Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>404</h1>
-          <h2>THE PAGE DOESN'T EXIST, YET.</h2>
-          <p>Please check again later.</p>
-          <button class="main__btn"><a href="index.html"> Go back </a></button>
+    <!-- Experience Section -->
+    <div class="experienceContainer">
+      <h1>PROJECTS</h1>
+      <div class="cardContainer">
+
+        <!-- Project 1 -->
+        <div class="card">
+          <h2 class="cardTitle">Weather App</h1>
+          <a href="https://affectionate-gates-9533fe.netlify.app/" target="_blank">
+          <img src="./images/weatherApp.JPG">
+          </a>
+          <div class="cardTechStack">
+              <div class="techStack">
+                <h3>HTML</h3>
+              </div>
+              <div class="techStack">
+                <h3>CSS</h3>
+              </div>
+              <div class="techStack">
+                <h3>ReactJS</h3>
+              </div>
+          </div>
+          <div class="cardButton">
+            <a href="https://affectionate-gates-9533fe.netlify.app/" target="_blank">Check it out!</a>
+          </div> 
         </div>
-        <!-- <div class="main__img--container">
-          <img id="main__img" src="images/pic1.svg" />
-        </div> -->
+
       </div>
     </div>
-
    
-<!-- Footer Sections -->
-    <div class="footer__container">
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <!-- <div class="footer__logo">
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>LOGO_COME_HERE</a>
-          </div> -->
-          <p class="website__rights">COLIN PEREIRA | 2021</p>
-            </a>
-          </div>
+    <!-- Footer Sections -->
+    <div class="footerContainer">
+      <div class="footerLeft">
+        <h3>COLIN PEREIRA | 2021</h3>
+      </div>
+      <div class="footerRight">
+        <div class="footerIconContainer">
+          <a href="https://github.com/colinpereira" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/github.png"/>
+          </a>
+          <a href="mailto:colinpereira37@gmail.com" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/email.png"/>
+          </a>
+          <a href="https://www.linkedin.com/in/colinpereira/" target="_blank">
+          <img class="socialIcon" src="./images/socialIcons/linkedin.png"/>
+          </a>
         </div>
-      </section>
-    </div> 
+      </div>
+    </div>
 
     <script src="./app.js"></script>
   </body>
