@@ -8,6 +8,8 @@
   align-items: center;
   height: 70px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footerLeft {
